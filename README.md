@@ -14,5 +14,4 @@ This repository includes, for completeness and credit to the original author, th
 * I'll likely make some minor changes to the code as I go along, but I would like
 to stick to the recommended code for the most part so it compiles and runs.
 
-* I am considering using Typescript for this, but I am unsure if the investment
-of time is worthwhile.
+### Typescript for EVERYTHING is enabled, and so far it isn't too bad.
