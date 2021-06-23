@@ -1,10 +1,12 @@
 import { FC } from 'react';
 
 interface PageProps {
-  children: any;
-  cool: string;
+  cool?: string;
+  // optional children of type reactNode
+  // children?: React.ReactNode;
 }
-const Page: FC<PageProps> = ({ children, cool }:{children: React.ReactElement[], cool: string}) => (
+
+const Page: FC<PageProps>  = ({ children, cool }) => (
   <div>
     <h2>I am the page component</h2>
     {children}

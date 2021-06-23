@@ -1,7 +1,15 @@
+/**
+* SETUP TYPESCRIPT WITH NEXT.JS
+*  https://nextjs.org/docs/basic-features/typescript
+*/
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -12,15 +20,23 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "/*"
+      ],
+      "@/components/*": [
+        "components/*"
+      ]
+    }
   },
-  // fixes a nasty bug where tsc could not find the relative path
-  // in the import of ./components/Page.tsx
-  // requires a subsequent `npm install && npm run dev
-  "baseUrl": "./",
-  "paths": {
-    "@/*": ["/*"]
-  },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

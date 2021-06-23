@@ -1,7 +1,7 @@
 export default function AccountPage() {
   return (
     <div>
-      <p>Hello!</p>
+      <p>Hello from the Account page!</p>
     </div>
   );
 }
