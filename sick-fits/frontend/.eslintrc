@@ -1,0 +1,20 @@
+{
+  "extends": ["wesbos"],
+  "rules": {
+    "no-console": 2,
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 80,
+        "tabWidth": 2
+      }
+    ],
+    "react/prop-types": [0],
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".ts", ".tsx", ".mdx"] }
+    ]
+  }
+}
