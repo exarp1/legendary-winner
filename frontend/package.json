@@ -9,9 +9,9 @@
     "start": "next start -p 7777",
     "test": "NODE_ENV=test jest --watch",
     "heroku-postbuild": "next build",
-    "preinstall": "npx npm-force-resolutions"
+    "preinstall": "npx npm-force-resolutions",
 		"lint": "eslint .",
-		"lint:fix": "eslint . --fix",
+		"lint:fix": "eslint . --fix"
   },
   "eslintConfig": {
     "extends": [
